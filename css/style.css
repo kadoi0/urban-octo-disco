@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+img {
+    max-width: 100%;
+}
+.main-nav, .top-visual, .sub-title {
+    font-family: Nunito, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+.wrapper {
+    padding-top: 73px;
+}
+.section {
+    padding: 90px 0;
+}
+.section:nth-of-type(odd) {
+    background-color: #f5f2f0;
+}
+.inner {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* 見出し */
+.sub-title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/* ヘッダー */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+}
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+}
+.main-nav li {
+    list-style-type: none;
+}
+.main-nav li a:hover {
+    color: #aaa;
+}
+
+/* タイトル */
+.top-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.top-visual-title {
+    font-size: 5rem;
+    line-height: 1;
+}
+.top-visual-sub {
+    font-size: 2.5rem;
+}
+
+/* Works */
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.works-item {
+    width: 31.74603%;
+    margin-right: 1.58730%;
+    margin-bottom: 40px;
+}
+.works-item:hover {
+    opacity: .75;
+}
+.works-item:nth-of-type(3n) {
+    margin-right: 0;
+}
+.works-image img {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+    object-fit: cover;
+}
+.works-name {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.works-info {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #555;
+}
+
+/* Skill */
+#skill .inner {
+    max-width: 1150px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 45%;
+}
+.skill-item:nth-of-type(2n){
+    margin-right: 0;
+}
+.skill-body {
+    flex: 1;
+}
+.skill-name {
+    margin-bottom: 3px;
+}
+
+/* icon */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15%;
+    margin-right: 20px;
+}
+.skill-icon p {
+    font-family: Roboto, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.html-css{
+    color: #fff;
+    background-color: #E54C21;
+}
+.photoshop {
+    color: #2FA3F7;
+    background-color: #001D34;
+}
+.illustrator {
+    color: #F79500;
+    background-color: #310000;
+}
+.word {
+    color: #F7F7F7;
+    background-color: #295294;
+}
+.excel {
+    color: #F7F7F7;
+    background-color: #126836;
+}
+
+/* About */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.profile-img {
+    width: 20%;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.profile-img img {
+    border-radius: 50%;
+}
+.profile-body {
+    flex: 1;
+}
+.profile-name {
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+#contact p {
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* Worksページ */
+.article {
+    padding: 80px 0;
+}
+.article-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.article-title {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.article-img {
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+.article-body {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.article-body a:hover {
+    opacity: .7;
+}
+.article-info-title {
+    font-size: 1.25rem;
+}
+.article-body img {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .1);
+}
+.article-body p {
+    margin-bottom: 30px;
+}
+.article-works {
+    text-align: center;
+}
+.article-works img {
+    margin-bottom: 15px;
+}
+.article-works p {
+    margin: 0;
+}
+.article-item {
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+.home-link {
+    text-align: center;
+}
+.home-link a:hover {
+    opacity: .7;
+}
+
+/* トップへもどる */
+.page-top {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f2f0;
+}
+.page-top:hover {
+    opacity: .7;
+}
+.page-arrow {
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    border-color:  transparent transparent #333 #333;
+    transform: rotate(135deg);
+    margin: 5px auto;
+}
+.page-top p {
+    vertical-align: bottom;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+/* フッター */
+.footer {
+    padding: 30px;
+    background-color: #333;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #f5f2f0;
+}

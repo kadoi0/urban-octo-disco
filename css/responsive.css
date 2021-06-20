@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@media (max-width: 600px) {
+    body {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .wrapper {
+        padding-top: 57px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    .inner {
+        padding: 0 20px;
+    }
+
+    /* 見出し */
+    .sub-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* ヘッダー */
+    .header .inner {
+        padding: 15px;
+    }
+    .main-nav {
+        width: 380px;
+        font-size: 1rem;
+    }
+
+    /* タイトル */
+    .top-visual {
+        height: 75vh;
+    }
+    .top-visual-title {
+        font-size: 3rem;
+    }
+    .top-visual-sub {
+        font-size: 1.5rem;
+    }
+
+    /* Works */
+    .works-list {
+        justify-content: space-between;
+    }
+    .works-item {
+        flex: 0 0 48%;
+    }
+    .works-name {
+        font-size: 0.7rem;
+    }
+    .works-info{
+        font-size: 0.45rem;
+    }
+
+    /* Skill */
+    .skill-list {
+        display: block;
+        margin-bottom: 0;
+    }
+    .skill-item {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /* Worksページ */
+    .article {
+        padding: 50px 0;
+    }
+
+}

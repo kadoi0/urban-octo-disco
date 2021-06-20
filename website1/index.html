@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>トップページ | わかやま観光情報サイト</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<meta name="keywords" content="和歌山県,観光">
+<meta name="description" content="当サイトでは、和歌山県の観光情報を発信しています。">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('a[href^=#]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<header>
+	<div class="header-in">
+		<a href="index.html">
+			<img src="images/top.png" width="180" height="60" alt="logo">
+			<h1>わかやま観光情報サイト</h1>
+		</a>
+		<nav>
+			<ul>
+				<li class="nav1">
+					<a href="index.html">
+					<p>トップ</p>
+					</a>
+				</li>
+				<li class="nav2">
+					<a href="areamenu.html">
+					<p>エリアガイド</p>
+					</a>
+				</li>
+				<li class="nav3">
+					<a href="stories.html">
+					<p>歴史・文化</p>
+					</a>
+				</li>
+				<li class="nav4">
+					<a href="contact.html">
+					<p>ご意見・ご要望</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div id="pagetop">
+</div>
+<div class="title_top_image">
+	<img alt="トップ画像" src="images/title_top.jpg">
+	<h2>わかやま観光情報サイトへようこそ</h2>
+</div>
+<div class="contents">
+	<article>
+		<div class="abstract">
+			<p>
+			近畿地方の南部に位置する和歌山県は、山や海、川の自然だけでなく、由緒のある歴史的遺産が豊富な県です。<br>
+			温泉、グルメ、観光スポット…、和歌山でしか味わえない旅を楽しみましょう！
+			</p>
+		</div>
+		<div class="top_images">
+			<a href="areamenu.html">
+				<div class="top_bnr">
+					<img alt="エリアガイド" src="images/top_1.jpg" width="800" height="267">
+					<h2>エリアガイド</h2>
+				</div>
+			</a>
+			<a href="stories.html">
+				<div class="top_bnr">
+					<img alt="歴史・文化" src="images/top_2.jpg" width="800" height="267">
+					<h2>歴史・文化</h2>
+				</div>
+			</a>
+		</div>
+	</article>
+</div>
+<footer>
+	<a href="#pagetop"></a>
+	<div class="about_us">
+		<address>和歌山県和歌山市XX-XX-XX<br>
+		TEL:xxx-xxx-xxxx
+		</address>
+		<small>&copy; わかやま観光情報サイト</small>
+	</div>
+</footer>
+</body>
+</html>
